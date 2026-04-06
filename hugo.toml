@@ -32,8 +32,10 @@ theme = "hugo-theme-stack"
       enabled = false
 
   [params.widgets]
-    homepage = ["search", "archives", "tag-cloud"]
-    page = ["toc"]
+    homepage = [
+      { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page = [{ type = "toc" }]
 
   [params.colorScheme]
     toggle = true
