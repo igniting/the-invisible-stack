@@ -1,0 +1,70 @@
+baseURL = "https://igniting.github.io/the-invisible-stack/"
+languageCode = "en-us"
+title = "The Harness"
+theme = "hugo-theme-stack"
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  mainSections = ["book"]
+  rssFullContent = true
+  description = "A book about how AI agents are built, how they fail, and what it will take to make them trustworthy."
+
+  [params.footer]
+    since = 2026
+    customText = "The Harness — The Trust Boundary Between AI and the Real World"
+
+  [params.dateFormat]
+    published = ":date_long"
+    lastUpdated = ":date_long"
+
+  [params.sidebar]
+    compact = false
+    subtitle = "The Trust Boundary Between AI and the Real World"
+
+  [params.article]
+    headingAnchor = true
+    toc = true
+    readingTime = true
+
+    [params.article.license]
+      enabled = false
+
+  [params.widgets]
+    homepage = ["search", "archives", "tag-cloud"]
+    page = ["toc"]
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+  [params.comments]
+    enabled = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "chapters"
+    name = "Chapters"
+    url = "/book/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = false
