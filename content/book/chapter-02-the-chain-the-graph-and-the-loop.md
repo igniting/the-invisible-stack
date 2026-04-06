@@ -3,6 +3,7 @@ title: "Chapter 2: The Chain, the Graph, and the Loop"
 description: "Three metaphors for how agents think — and why each one broke"
 date: 2026-04-02
 weight: 2
+linkTitle: "2. The Chain, the Graph, and the Loop"
 tags: ["orchestration", "LangGraph", "frameworks"]
 ---
 

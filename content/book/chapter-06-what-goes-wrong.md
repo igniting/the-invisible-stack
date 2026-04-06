@@ -3,6 +3,7 @@ title: "Chapter 6: What Goes Wrong"
 description: "Failure patterns, antipatterns, and the lessons nobody writes blog posts about"
 date: 2026-04-06
 weight: 6
+linkTitle: "6. What Goes Wrong"
 tags: ["failures", "security", "incidents", "tenant-isolation"]
 ---
 

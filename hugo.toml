@@ -1,72 +1,54 @@
 baseURL = "https://igniting.github.io/the-invisible-stack/"
 languageCode = "en-us"
 title = "The Harness"
-theme = "hugo-theme-stack"
+theme = "hextra"
+
+enableRobotsTXT = true
 
 [pagination]
   pagerSize = 20
 
 [params]
-  mainSections = ["book"]
-  rssFullContent = true
-  description = "A book about how AI agents are built, how they fail, and what it will take to make them trustworthy."
+  description = "The Trust Boundary Between AI and the Real World"
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+    width = "wide"
+
+  [params.page]
+    displayPagination = true
 
   [params.footer]
-    since = 2026
-    customText = "The Harness — The Trust Boundary Between AI and the Real World"
+    displayCopyright = false
+    displayPoweredBy = false
 
-  [params.dateFormat]
-    published = ":date_long"
-    lastUpdated = ":date_long"
+  [params.theme]
+    default = "system"
+    displayToggle = true
 
-  [params.sidebar]
-    compact = false
-    subtitle = "The Trust Boundary Between AI and the Real World"
+  [params.highlight]
+    copy = { enable = true, display = "hover" }
 
-  [params.article]
-    headingAnchor = true
-    toc = true
-    readingTime = false
-
-    [params.article.license]
-      enabled = false
-
-  [params.widgets]
-    homepage = [
-      { type = "tag-cloud", params = { limit = 10 } },
-    ]
-    page = [{ type = "chapters" }, { type = "toc" }]
-
-  [params.colorScheme]
-    toggle = true
-    default = "auto"
-
-  [params.comments]
-    enabled = false
+  [params.search]
+    enable = false
 
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "chapters"
-    name = "Chapters"
+    identifier = "book"
+    name = "Read the Book"
     url = "/book/"
-    weight = 2
+    weight = 1
 
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 2
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    style = "github"
-    lineNos = false
+    noClasses = false

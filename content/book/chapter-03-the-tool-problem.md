@@ -3,6 +3,7 @@ title: "Chapter 3: The Tool Problem"
 description: "A protocol, a universal adapter, and the new attack surface it created"
 date: 2026-04-03
 weight: 3
+linkTitle: "3. The Tool Problem"
 tags: ["MCP", "tools", "security", "protocols"]
 ---
 

@@ -3,6 +3,7 @@ title: "Chapter 4: Whose Harness?"
 description: "How every AI lab built the same thing differently — and what their choices reveal"
 date: 2026-04-04
 weight: 4
+linkTitle: "4. Whose Harness?"
 tags: ["SDKs", "frameworks", "strategy", "AgentCore"]
 ---
 

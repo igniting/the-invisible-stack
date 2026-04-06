@@ -3,6 +3,7 @@ title: "Chapter 7: The Trust Boundary"
 description: "Identity, policy, and the question of who the agent is acting for"
 date: 2026-04-01
 weight: 7
+linkTitle: "7. The Trust Boundary"
 tags: ["trust", "identity", "policy", "governance"]
 ---
 

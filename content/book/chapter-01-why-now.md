@@ -3,6 +3,7 @@ title: "Chapter 1: Why Now"
 description: "The confluence that made agents possible — and inevitable"
 date: 2026-04-01
 weight: 1
+linkTitle: "1. Why Now"
 tags: ["orchestration", "history", "foundations"]
 ---
 

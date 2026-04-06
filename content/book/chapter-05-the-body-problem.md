@@ -3,6 +3,7 @@ title: "Chapter 5: The Body Problem"
 description: "Sandboxes, runtimes, and the question of what agents are allowed to touch"
 date: 2026-04-05
 weight: 5
+linkTitle: "5. The Body Problem"
 tags: ["sandboxing", "security", "execution", "isolation"]
 ---
 
