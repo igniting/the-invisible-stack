@@ -168,7 +168,3 @@ A large fraction of the agents deployed in 2026 do not have an organization. The
 Marcus had been scanning the public internet for these instances since November. He was in the process of writing up what he had found. The framework Nadia had written did not describe the world Marcus was documenting. A different architecture, or a different failure pattern, governed there.
 
 The next chapter is about what Marcus found.
-
----
-
-*Next: [Chapter 8 — The Personal Agent](/book/chapter-08-the-personal-agent/)*

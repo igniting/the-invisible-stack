@@ -214,7 +214,3 @@ Its architecture provides:
 This separation of framework (orchestration) from runtime (execution and trust) was the architectural direction Sam bet on. It allowed the trust layer to evolve independently of the orchestration layer — and the trust layer, he was convinced, was where the industry's underinvestment would eventually be exposed.
 
 The next chapter is about the first place it was exposed: the body problem.
-
----
-
-*Next: [Chapter 5 — The Body Problem](/book/chapter-05-the-body-problem/)*

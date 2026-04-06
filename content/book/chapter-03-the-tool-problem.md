@@ -236,7 +236,3 @@ The layered stack David identified:
 - **A2A** — collaboration layer. Cross-agent communication and delegation. Newest, least mature, greatest complexity potential.
 
 The trust implications are cumulative. Each layer up the stack introduces new trust requirements, and none currently provides comprehensive trust infrastructure. The tool problem — the N×M integration challenge — has been solved at the protocol level. But solving the tool problem has exposed the trust problem. And as the next chapter shows, the way each company approaches that problem reveals more about their philosophy of agent design than any feature list ever could.
-
----
-
-*Next: [Chapter 4 — Whose Harness?](/book/chapter-04-whose-harness/)*

@@ -164,7 +164,3 @@ The personal-agent category has arrived. The demand is real. The trust architect
 The shape of what is missing is visible in outline. Identity primitives that distinguish the user from the agent, and the agent from each skill. Capability declarations that force skills to enumerate their side effects, verified by the runtime. Audit infrastructure that the user can actually read. A governance model that does not require the user to become a security professional in order to run an assistant.
 
 Someone is going to have to build it.
-
----
-
-*Next: [Chapter 9 — Skills and the Learning Loop](/book/chapter-09-skills-and-the-learning-loop/)*

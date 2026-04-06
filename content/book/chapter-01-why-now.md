@@ -250,7 +250,3 @@ This asymmetry — mature orchestration, adolescent execution, nascent trust —
 The chapters that follow trace how this asymmetry developed, what it looks like when it meets reality, and what it will take to resolve. They begin with the orchestration layer — the most visible and most debated part of the harness — because that is where every practitioner's journey begins.
 
 Including Sam's.
-
----
-
-*Next: [Chapter 2 — The Chain, the Graph, and the Loop](/book/chapter-02-the-chain-the-graph-and-the-loop/)*

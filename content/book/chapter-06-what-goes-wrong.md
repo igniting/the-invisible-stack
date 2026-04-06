@@ -243,7 +243,3 @@ The common diagnosis is that the harness assumed the agent knew things it did no
 Elena's incident sits squarely in this pattern. Her agent did something reasonable (called an available tool to get more context). Her harness lacked a constraint (no production allowlist on the debug tool). The consequence propagated (cross-tenant data reached a customer email). The failure was detected by an external observer (Nadia's DLP scanner). The fix was to move constraints from the agent's judgment to the harness's enforcement.
 
 This is the architecture of trust.
-
----
-
-*Next: [Chapter 7 — The Trust Boundary](/book/chapter-07-the-trust-boundary/)*

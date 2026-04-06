@@ -236,7 +236,3 @@ The most significant cost factor is **context growth**. Each iteration sends the
 The broader principle: the infrastructure that feels like overhead — checkpointing, observability, durable execution — is not cost added on top of the agent. It is cost subtracted from the agent's failure modes. In a field where the most expensive thing is not running an agent but re-running a failed one, the harness is not overhead. It is savings.
 
 Sam understood this. Elena would learn it the hard way. The lesson, when it came, would cost more than $5,000 a month.
-
----
-
-*Next: [Chapter 3 — The Tool Problem](/book/chapter-03-the-tool-problem/)*

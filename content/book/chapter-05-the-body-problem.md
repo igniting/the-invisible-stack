@@ -172,7 +172,3 @@ The economic conclusion: sandboxing is cheap. The cost of running an agent in a 
 For any agent that handles real data, executes untrusted code, or operates in a multi-tenant environment, the sandbox is the highest-ROI security investment available.
 
 Elena was about to discover how that hope resolved.
-
----
-
-*Next: [Chapter 6 — What Goes Wrong](/book/chapter-06-what-goes-wrong/)*

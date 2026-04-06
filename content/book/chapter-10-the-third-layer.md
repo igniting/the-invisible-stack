@@ -177,6 +177,3 @@ The reader — if the reader is building agents, buying agents, governing agents
 
 The final claim of this book is the simplest one: the field's next chapter is not written yet, and the person reading this sentence is one of the people who will write it.
 
----
-
-*Appendices: [A — Timeline](/book/appendix-a-timeline/) · [B — Architecture Diagrams](/book/appendix-b-architecture-diagrams/) · [C — The Decision Framework](/book/appendix-c-the-decision-framework/) · [D — Glossary](/book/appendix-d-glossary/)*

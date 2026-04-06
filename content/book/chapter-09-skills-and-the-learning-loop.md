@@ -182,7 +182,3 @@ The constraints were: context windows are finite, capabilities are not, and the 
 Convergent evolution in software is rare and informative. When it happens, it suggests the designers have found a point in the design space that the underlying constraints force. Skills appear to be such a point.
 
 What they do not settle is the question of authority. A human-authored skill carries the authority of the person who wrote it. An agent-authored skill carries — what? The agent's judgment? The model underneath the agent? The implicit authority of the environment that allowed the authoring? The category does not yet have an answer.
-
----
-
-*Next: [Chapter 10 — The Third Layer](/book/chapter-10-the-third-layer/)*
