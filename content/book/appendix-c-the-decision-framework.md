@@ -1,7 +1,7 @@
 ---
 title: "Appendix C: The Decision Framework"
 description: "A structured guide for evaluating and selecting agent frameworks and trust infrastructure"
-date: 2026-04-13
+date: 2026-04-01
 weight: 13
 tags: ["reference", "decision", "framework", "evaluation"]
 ---

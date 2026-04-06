@@ -1,7 +1,7 @@
 ---
 title: "Appendix A: Timeline"
 description: "A chronological reference for the events, releases, and incidents referenced across the book"
-date: 2026-04-11
+date: 2026-04-01
 weight: 11
 tags: ["reference", "timeline"]
 ---

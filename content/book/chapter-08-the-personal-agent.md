@@ -1,7 +1,7 @@
 ---
 title: "Chapter 8: The Personal Agent"
 description: "OpenClaw, and what happens when 345,000 people run agents without guardrails"
-date: 2026-04-08
+date: 2026-04-01
 weight: 8
 tags: ["personal agents", "OpenClaw", "security", "ClawJacked"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Chapter 10: The Third Layer"
 description: "Where the characters end up, what the book claims, and the questions the reader carries forward"
-date: 2026-04-10
+date: 2026-04-01
 weight: 10
 tags: ["trust", "conclusions", "maturity model"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Chapter 9: Skills and the Learning Loop"
 description: "The abstraction every team invented independently — and the agent that took it further"
-date: 2026-04-09
+date: 2026-04-01
 weight: 9
 tags: ["skills", "learning", "Hermes", "SKILL.md"]
 ---

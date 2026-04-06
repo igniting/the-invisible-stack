@@ -1,7 +1,7 @@
 ---
 title: "Appendix D: Glossary"
 description: "Key terms and concepts used throughout The Harness"
-date: 2026-04-13
+date: 2026-04-01
 weight: 14
 tags: ["reference", "glossary", "definitions"]
 ---

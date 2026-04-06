@@ -1,7 +1,7 @@
 ---
 title: "Appendix B: Architecture Diagrams"
 description: "Schematic representations of the major frameworks' internal designs"
-date: 2026-04-12
+date: 2026-04-01
 weight: 12
 tags: ["reference", "architecture", "diagrams"]
 ---
