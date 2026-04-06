@@ -26,7 +26,7 @@ theme = "hugo-theme-stack"
   [params.article]
     headingAnchor = true
     toc = true
-    readingTime = true
+    readingTime = false
 
     [params.article.license]
       enabled = false
@@ -35,7 +35,7 @@ theme = "hugo-theme-stack"
     homepage = [
       { type = "tag-cloud", params = { limit = 10 } },
     ]
-    page = [{ type = "toc" }]
+    page = [{ type = "chapters" }, { type = "toc" }]
 
   [params.colorScheme]
     toggle = true

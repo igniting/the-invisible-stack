@@ -1,0 +1,42 @@
+{{ $currentPage := .Context }}
+{{ $bookSection := $currentPage.Site.GetPage "book" }}
+
+{{ if $bookSection }}
+<section class="widget widget--chapters card">
+    <div class="widget-content">
+        <h2 class="widget-title section-title">Contents</h2>
+        <ol>
+            {{- $chapters := slice -}}
+            {{- $appendices := slice -}}
+            {{- range $bookSection.Pages.ByWeight -}}
+                {{- if le .Weight 10 -}}
+                    {{- $chapters = $chapters | append . -}}
+                {{- else -}}
+                    {{- $appendices = $appendices | append . -}}
+                {{- end -}}
+            {{- end -}}
+
+            {{- range $chapters }}
+            <li {{ if eq .RelPermalink $currentPage.RelPermalink }}class="active"{{ end }}>
+                <a href="{{ .RelPermalink }}">
+                    <span class="ch-num">{{ .Weight }}.</span>
+                    {{ .Params.shorttitle | default .Title | replaceRE "^Chapter [0-9]+: " "" }}
+                </a>
+            </li>
+            {{- end }}
+
+            {{ if $appendices }}
+            <li><div class="ch-divider"></div></li>
+            {{- range $appendices }}
+            <li {{ if eq .RelPermalink $currentPage.RelPermalink }}class="active"{{ end }}>
+                <a href="{{ .RelPermalink }}">
+                    <span class="ch-num">{{ slicestr "ABCD" (sub .Weight 11) (add (sub .Weight 11) 1) }}.</span>
+                    {{ .Title | replaceRE "^Appendix [A-D]: " "" }}
+                </a>
+            </li>
+            {{- end }}
+            {{ end }}
+        </ol>
+    </div>
+</section>
+{{ end }}
