@@ -1,6 +1,6 @@
 ---
 title: "Appendix D: Glossary"
-description: "Key terms and concepts used throughout The Harness"
+description: "Key terms and concepts used throughout The Invisible Stack"
 date: 2026-04-01
 weight: 14
 tags: ["reference", "glossary", "definitions"]

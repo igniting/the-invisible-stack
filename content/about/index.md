@@ -1,13 +1,12 @@
 ---
 title: "About This Book"
-description: "About The Harness: The Trust Boundary Between AI and the Real World"
+description: "About The Invisible Stack: The Hidden Infrastructure of AI Agents"
 date: 2026-04-13
-layout: "about"
 ---
 
-## The Harness
+## The Invisible Stack
 
-*The Trust Boundary Between AI and the Real World* is a practitioner's guide to building AI agents that act in the world safely and accountably.
+*The Hidden Infrastructure of AI Agents* is a practitioner's guide to building AI agents that act in the world safely and accountably.
 
 The book follows a team of engineers — Sam, Elena, Marcus, David, and Nadia — as they build, break, and rebuild agent infrastructure across two years of rapid industry change. It is structured around a single thesis: the agent infrastructure stack has three layers, and most teams build two of them.
 
@@ -52,6 +51,6 @@ The infrastructure is still moving. The trust problems are not.
 
 ## This Site
 
-Built with [Hugo](https://gohugo.io/) and the [Stack theme](https://github.com/CaiJimmy/hugo-theme-stack). Hosted on GitHub Pages.
+Built with [Hugo](https://gohugo.io/). Hosted on GitHub Pages.
 
 Source: [igniting/the-invisible-stack](https://github.com/igniting/the-invisible-stack)

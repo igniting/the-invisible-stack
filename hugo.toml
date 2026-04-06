@@ -1,12 +1,12 @@
 baseURL = "https://igniting.github.io/the-invisible-stack/"
 languageCode = "en-us"
-title = "The Harness"
+title = "The Invisible Stack"
 
 disablePathToLower = true
 
 [params]
-  subtitle = "The Trust Boundary Between AI and the Real World"
-  description = "A practitioner's guide to building AI agents that act in the world safely and accountably — the orchestration layer, the execution layer, and the trust layer most teams forget to build."
+  subtitle = "The Hidden Infrastructure of AI Agents"
+  description = "A practitioner's guide to the hidden infrastructure of AI agents — the orchestration layer, the execution layer, and the trust layer most teams forget to build."
 
 [markup]
   [markup.goldmark.renderer]

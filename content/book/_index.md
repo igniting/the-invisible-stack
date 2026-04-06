@@ -1,5 +1,5 @@
 ---
-title: "The Harness"
-description: "The Trust Boundary Between AI and the Real World"
+title: "The Invisible Stack"
+description: "The Hidden Infrastructure of AI Agents"
 weight: 0
 ---
