@@ -1,54 +1,28 @@
 baseURL = "https://igniting.github.io/the-invisible-stack/"
 languageCode = "en-us"
 title = "The Harness"
-theme = "hextra"
+theme = "hugo-book"
 
-enableRobotsTXT = true
+disablePathToLower = true
 
 [pagination]
   pagerSize = 20
 
 [params]
-  description = "The Trust Boundary Between AI and the Real World"
-
-  [params.navbar]
-    displayTitle = true
-    displayLogo = false
-    width = "wide"
-
-  [params.page]
-    displayPagination = true
-
-  [params.footer]
-    displayCopyright = false
-    displayPoweredBy = false
-
-  [params.theme]
-    default = "system"
-    displayToggle = true
-
-  [params.highlight]
-    copy = { enable = true, display = "hover" }
-
-  [params.search]
-    enable = false
-
-[menu]
-  [[menu.main]]
-    identifier = "book"
-    name = "Read the Book"
-    url = "/book/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 2
+  BookTheme = "auto"
+  BookSection = "book"
+  BookToC = true
+  BookSearch = true
+  BookComments = false
+  BookDateFormat = "January 2, 2006"
+  BookServiceWorker = false
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
   [markup.highlight]
+    style = "github"
     noClasses = false
