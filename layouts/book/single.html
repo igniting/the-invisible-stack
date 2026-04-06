@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<!-- Reading progress bar -->
+<div class="progress-bar" id="progress"></div>
+
+{{ partial "nav.html" . }}
+
+<article class="chapter">
+  <header class="chapter-header">
+    {{ if le .Params.weight 10 }}
+      <span class="chapter-number">Chapter {{ .Params.weight }}</span>
+    {{ else }}
+      <span class="chapter-number">Appendix {{ index (slice "A" "B" "C" "D") (sub .Params.weight 11) }}</span>
+    {{ end }}
+    <h1 class="chapter-title">{{ .Title | replaceRE "^(Chapter [0-9]+|Appendix [A-D]): " "" }}</h1>
+    {{ with .Params.description }}
+    <p class="chapter-opening">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <div class="chapter-body">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ partial "chapter-nav.html" . }}
+
+<script>
+  window.addEventListener('scroll', function() {
+    const article = document.querySelector('.chapter');
+    const bar = document.getElementById('progress');
+    if (!article || !bar) return;
+    const articleTop = article.getBoundingClientRect().top + window.scrollY;
+    const scrolled = window.scrollY - articleTop + window.innerHeight;
+    const progress = Math.min(Math.max(scrolled / article.offsetHeight * 100, 0), 100);
+    bar.style.width = progress + '%';
+  });
+</script>
+
+{{ end }}

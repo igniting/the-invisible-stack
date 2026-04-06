@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="home">
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-label">A Practitioner's Guide to AI Agent Infrastructure</span>
+      <h1>The Harness</h1>
+      <hr class="hero-rule">
+      <p class="hero-subtitle">The Trust Boundary Between AI and the Real World</p>
+      <p class="hero-description">
+        The orchestration layer, the execution layer, and the trust layer most teams forget to build.
+      </p>
+    </div>
+  </header>
+
+  <!-- Begin Reading -->
+  <div class="cta-section">
+    {{ $pages := where .Site.RegularPages "Section" "book" }}
+    {{ $first := index (sort $pages ".Params.weight") 0 }}
+    {{ with $first }}
+    <a href="{{ .RelPermalink }}" class="cta-link">Begin Reading</a>
+    {{ end }}
+  </div>
+
+  <!-- Table of Contents -->
+  <section class="toc-section">
+    <p class="toc-heading">Chapters</p>
+    <ol class="toc-list">
+      {{ $pages := where .Site.RegularPages "Section" "book" }}
+      {{ range sort $pages ".Params.weight" }}
+        {{ if le .Params.weight 10 }}
+        <li class="toc-item">
+          <a href="{{ .RelPermalink }}" class="toc-link">
+            <span class="toc-number">{{ printf "%02d" .Params.weight }}</span>
+            <div>
+              <span class="toc-title">{{ .Title | replaceRE "^Chapter [0-9]+: " "" }}</span>
+              {{ with .Params.description }}
+              <span class="toc-excerpt">{{ . }}</span>
+              {{ end }}
+            </div>
+          </a>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ol>
+
+    <p class="toc-heading" style="margin-top: 3rem;">Appendices</p>
+    <ol class="toc-list">
+      {{ $pages := where .Site.RegularPages "Section" "book" }}
+      {{ range sort $pages ".Params.weight" }}
+        {{ if ge .Params.weight 11 }}
+        <li class="toc-item">
+          <a href="{{ .RelPermalink }}" class="toc-link">
+            <span class="toc-number">{{ index (slice "A" "B" "C" "D") (sub .Params.weight 11) }}</span>
+            <div>
+              <span class="toc-title">{{ .Title | replaceRE "^Appendix [A-D]: " "" }}</span>
+              {{ with .Params.description }}
+              <span class="toc-excerpt">{{ . }}</span>
+              {{ end }}
+            </div>
+          </a>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ol>
+  </section>
+
+  <!-- Colophon -->
+  <footer class="colophon">
+    <p>The infrastructure is still moving. The trust problems are not.</p>
+  </footer>
+
+</div>
+{{ end }}

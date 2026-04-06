@@ -1,0 +1,29 @@
+{{ $pages := where .Site.RegularPages "Section" "book" }}
+{{ $pages = sort $pages ".Params.weight" }}
+{{ $currentWeight := .Params.weight }}
+
+<nav class="chapter-nav" aria-label="Chapter navigation">
+  <div class="chapter-nav-inner">
+    {{ range $pages }}
+      {{ if eq .Params.weight (sub $currentWeight 1) }}
+        <a href="{{ .RelPermalink }}" class="chapter-nav-link prev" aria-label="Previous">
+          <span class="chapter-nav-label">Previous</span>
+          <span class="chapter-nav-title">{{ .LinkTitle | default .Title }}</span>
+        </a>
+      {{ end }}
+    {{ end }}
+
+    <a href="{{ .Site.BaseURL }}" class="chapter-nav-link toc" aria-label="Table of Contents">
+      <span class="chapter-nav-label">Contents</span>
+    </a>
+
+    {{ range $pages }}
+      {{ if eq .Params.weight (add $currentWeight 1) }}
+        <a href="{{ .RelPermalink }}" class="chapter-nav-link next" aria-label="Next">
+          <span class="chapter-nav-label">Next</span>
+          <span class="chapter-nav-title">{{ .LinkTitle | default .Title }}</span>
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</nav>

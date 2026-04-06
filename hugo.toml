@@ -1,28 +1,18 @@
 baseURL = "https://igniting.github.io/the-invisible-stack/"
 languageCode = "en-us"
 title = "The Harness"
-theme = "hugo-book"
 
 disablePathToLower = true
 
-[pagination]
-  pagerSize = 20
-
 [params]
-  BookTheme = "auto"
-  BookSection = "book"
-  BookToC = true
-  BookSearch = true
-  BookComments = false
-  BookDateFormat = "January 2, 2006"
-  BookServiceWorker = false
+  subtitle = "The Trust Boundary Between AI and the Real World"
+  description = "A practitioner's guide to building AI agents that act in the world safely and accountably — the orchestration layer, the execution layer, and the trust layer most teams forget to build."
 
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 3
+  [markup.goldmark.parser.attribute]
+    block = true
   [markup.highlight]
     style = "github"
     noClasses = false
