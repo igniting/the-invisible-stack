@@ -31,15 +31,27 @@ Nadia's company had been piloting an AI-powered customer support agent from a st
 
 ---
 
-Elena Voss was in Berlin, three hours ahead of London, walking to the office when she saw the message from Nadia's security team. The subject line read: *URGENT: Suspected Cross-Tenant Data Leak — Immediate Response Required*.
+Elena Voss had been awake since 4 AM Berlin time.
 
-She read the email standing on the sidewalk. Then she read it again. Then she ran the rest of the way to the office.
+It started with a Slack message from Jonas, one of her engineers, who had a habit of monitoring dashboards past midnight. *Seeing some weird outbound traffic patterns from the Nadia deployment — probably nothing but flagging it.* Probably nothing was Jonas's phrase for something he hadn't figured out yet. Elena had pulled up the monitoring dashboard on her phone in the dark of her bedroom, stared at graphs that didn't resolve into anything intelligible, told him to keep watching, and lain back down. She didn't sleep.
 
-By the time she was at her desk, her phone was ringing. It was Nadia.
+By 6 AM she was at her kitchen table with her laptop. The graphs still didn't explain themselves. She was tracing an anomalous tool call — a tool name she recognized but couldn't account for in that deployment — when the email from Nadia's security team arrived.
+
+*URGENT: Suspected Cross-Tenant Data Leak — Immediate Response Required.*
+
+She read it once. Then she read it again.
+
+For two years she had told pilot customers that their data was safe, that her isolation architecture was solid, that she had thought carefully about the trust model. She had believed it every time she said it. She still believed it for maybe thirty seconds after reading that email, in the way that the mind holds onto a structure even after the floor has dropped.
+
+Then she grabbed her bag and ran.
+
+---
+
+She was at her desk, still out of breath, when her phone rang. It was Nadia.
 
 "Elena. We have a situation."
 
-Elena tried to sound calm. "I just saw the email. I'm pulling up logs now. Tell me exactly what you're seeing."
+She pressed the phone to her ear and made her voice level. "I just saw the email. I'm pulling up logs now. Tell me exactly what you're seeing."
 
 Nadia told her. An outbound email, composed by Elena's agent, sent to a customer in London, containing three lines of content that mentioned a person nobody at Nadia's company had ever heard of, referencing an order number that did not match any of their order number formats, signed with a customer service representative's name from — Nadia had checked — one of Elena's other pilot customers, a French logistics company.
 
@@ -91,7 +103,17 @@ Elena was quiet for a moment. "In the query. I think."
 
 "Pull up the retrieval code."
 
-She pulled it up. Then she was quiet for a very long time.
+She pulled it up. She read through it once. Then she said: "Sam."
+
+"Yeah."
+
+"I approved this code review. Three months ago. I approved the debug table. I didn't think about what it could be used for. I was thinking about retrieval quality."
+
+Sam said nothing.
+
+"I didn't see it," she said.
+
+"I know. Write everything down. Everything you're finding, every decision that led here. We'll talk about what to do after you have the full picture."
 
 ---
 
@@ -116,6 +138,42 @@ The agent had not escaped the sandbox. The agent had not been manipulated by a p
 The failure was not the agent's. The failure was in the architecture around the agent. A debug tool, shipped to production by accident, had handed the agent an API that violated the tenant isolation guarantee that the rest of the system had been designed to enforce.
 
 Elena wrote this up, honestly, in a six-page root cause analysis, and sent it to Nadia by 6 PM London time.
+
+It was 9:15 PM in Berlin when she hit send. She poured a glass of water she didn't drink. Then she called Tobias.
+
+Tobias Brandt was her co-founder — the commercial side, the fundraising, the customer relationships she had relied on while she ran the technical architecture. He had flown to New York that morning for investor meetings. It was 3 PM there when her call came through.
+
+She gave him the facts in four sentences. Cross-tenant data leak. Enterprise pilot customer. Root cause identified and documented. An independent security assessment of their platform would follow.
+
+He was quiet for longer than she'd expected.
+
+"How bad is the assessment going to be?" he said.
+
+"It will recommend a rebuild. Not a patch."
+
+"What does that mean for runway?"
+
+"It means we should talk to the board before the end of the week."
+
+A long pause. "I'll cancel Tuesday in New York," he said. "I'll be back Thursday."
+
+She almost thanked him. She didn't, because there was nothing to thank him for — he was doing what the situation required, and so was she.
+
+---
+
+The board meeting was Friday morning. Elena had spent three days preparing a slide deck. She opened her laptop, looked at the first slide, and closed it. Then she described what had happened without slides: the retrieval pipeline, the debug table, the environment variable that had re-enabled the tool, the ten days nobody had called it, the day the model had decided to call it.
+
+The board was four people. Two asked hard questions about rebuild timeline and runway. One asked whether Nadia's company would pursue the breach under their data processing agreement. The fourth — the one who had written the first check specifically because he believed Elena understood infrastructure — said nothing through the first forty minutes.
+
+When he spoke, he said: "What did we build that let a debug tool stay live in production for three weeks without anyone knowing?"
+
+"A culture that moved fast and didn't formalize the controls," Elena said. "That's the honest answer."
+
+He nodded slowly. "Then the question is whether that culture can change, or whether it's load-bearing."
+
+"I think it can change. I don't know for certain. You'll have to decide whether to believe that."
+
+They gave her the runway. Nobody said she had done the right thing, because she hadn't. The right thing had been to build the controls before the incident. Everything after that was recovery.
 
 ---
 

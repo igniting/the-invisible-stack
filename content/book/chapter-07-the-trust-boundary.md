@@ -101,7 +101,7 @@ Nadia read this last comment four times. Then she revised the framework's struct
 
 She sent the revision to Marcus, Sam, and her security director on the same email. Sam replied within an hour: *The mandatory core is right. This is the version I would defend.* Marcus replied the next day: *Better. Still incomplete. Ship it.* Her security director replied three days later with nine additional comments, all of which she accepted.
 
-The framework was not a standard. It was a working document, used inside one company, circulated among a small network of people who were trying to solve the same problem at other companies. Sam began using its mandatory core as a checklist in his own deployment reviews. A colleague of Marcus's at a Seattle hospital adopted a modified version. A bank in Singapore asked Nadia for a copy after a chance conversation at a conference.
+The framework was not a standard. It was a working document, used inside one company, circulated among a small network of people who were trying to solve the same problem at other companies. Sam began using its mandatory core as a checklist in his own deployment reviews — partly because he understood, from an account he had lost eighteen months earlier, what a HITL architecture that hadn't been pressure-tested could do. He had patched the bug. He had not won back the customer. A colleague of Marcus's at a Seattle hospital adopted a modified version. A bank in Singapore asked Nadia for a copy after a chance conversation at a conference.
 
 Elena read the mandatory core the week Sam sent it to her. She printed it and marked it up. Of the seven items, her rebuild already satisfied three. She added the other four to her engineering plan.
 

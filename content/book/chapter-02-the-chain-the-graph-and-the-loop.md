@@ -77,6 +77,22 @@ This transparency turned out to be as important for internal trust as it was for
 
 "I trust this more," Leo told Sam after watching the dashboard for a week. "Not because it's perfect. Because I can see when it's not."
 
+Sam did not learn every LangGraph lesson from documentation.
+
+In February 2024, six weeks after his migration, he gave a demo to a fintech startup that processed payroll for small businesses. He showed them the streaming dashboard and the HITL interrupts. He told them the approval flow was fully session-isolated: each user's agent ran in its own checkpointed thread, and approvals applied only to the session that had requested them.
+
+He believed this when he said it.
+
+He had deployed LangGraph's checkpoint persistence to a shared Redis instance, with thread IDs as keys. What he had not tested — what had not occurred to him to test — was what happened when two users' sessions both hit an interrupt at the same moment. When two approval requests were outstanding simultaneously, keyed to different thread IDs, both waiting for resolution. And what happened when the approval message, processed through his notification system, resolved the wrong thread.
+
+It happened twice in the first three weeks of the pilot. Each time, a payroll approval intended for one account was applied against a different account's pending action. The discrepancy was small — a difference in timing, not in amounts — and both times the customer's own reconciliation process caught it before any transaction completed. No money moved incorrectly.
+
+But the trust was gone.
+
+"We can't use this in payroll," the customer's CTO told him. "We can't use anything in payroll that we don't fully understand. And we don't understand how this happened."
+
+Sam didn't argue. He spent the following week diagnosing the bug, patching the checkpoint keying logic, and writing a post-mortem he sent to no one.
+
 ---
 
 While Sam was rebuilding his system on LangGraph, Elena Voss was having a very different experience.
