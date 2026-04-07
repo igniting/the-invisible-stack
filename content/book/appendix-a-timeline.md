@@ -121,5 +121,3 @@ A chronological reference for the events, releases, and incidents referenced acr
 **April 2026** — Sam's team ships their first production deployment to an enterprise customer on the Claude Agent SDK + AgentCore stack. Elena conducts her rebuild retrospective. Marcus begins writing *The Operational Layer*. David drafts the next MCP working-group agenda. Nadia meets with three other banks' chief risk officers to align on shared framework language.
 
 ---
-
-*Back to [Table of Contents](/book/)*

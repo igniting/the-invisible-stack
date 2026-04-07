@@ -208,5 +208,3 @@ Use this matrix when comparing vendors for a specific component of the agent sta
 | **Compliance** | SOC 2? ISO 27001? GDPR data processing agreement? | "We're working on it" — not acceptable for regulated industries |
 
 ---
-
-*Back to [Table of Contents](/book/)*

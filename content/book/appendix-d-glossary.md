@@ -265,5 +265,3 @@ The enforced limit of what an agent is permitted to do, implemented at the execu
 A cryptographic identity assigned to a specific agent instance (rather than a user or service account), allowing audit logs to distinguish actions taken by different agent instances even within the same session or on behalf of the same user.
 
 ---
-
-*Back to [Table of Contents](/book/)*

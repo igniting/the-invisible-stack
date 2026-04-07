@@ -252,5 +252,3 @@ Performance / Simplicity ▲
 ```
 
 ---
-
-*Back to [Table of Contents](/book/)*
