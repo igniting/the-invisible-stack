@@ -17,15 +17,15 @@ He did not feel triumphant. He felt the particular kind of flatness that follows
 
 Leo, his CEO, caught him in the hallway an hour later.
 
-"Are we celebrating?"
+"Celebrating?"
 
-"On Friday. After people rest."
+"Friday. After people rest."
 
-"What's next?"
+"Next six months. What do you see?"
 
-Sam thought about this for longer than Leo probably expected. "We harden the trust layer. The orchestration works. The execution works. The trust layer is the one we built fastest because we had to, and it's the one I trust least. The next six months are going to be about making it auditable enough that a customer like Nadia's could adopt it without writing their own framework on top."
+Sam thought about this for longer than Leo probably expected. "We harden the trust layer. The orchestration works. The execution works. The trust layer is the one we built fastest because we had to, and it's the one I trust least. The next six months are about making it auditable enough that a customer like Nadia's could adopt it without writing their own framework on top."
 
-"That's a defensive move."
+"Defensive."
 
 "It's the move I believe in."
 
@@ -57,7 +57,9 @@ Elena nodded. "We survived."
 
 "You survived. Most companies in your position did not."
 
-Petra, after the meeting, asked Elena what she would have told herself two years earlier if she had been able to.
+He had watched the graveyard fill since November. Kestrel Insights — a legal-discovery startup that had raised a Series A on the strength of its agent-powered document review — had lost two Fortune 500 clients after a privilege-escalation incident in August 2025, failed to close its Series B in the resulting uncertainty, and quietly wound down that November. The founders were at larger companies now. The IP had sold in a distress auction to a law firm that shelved it. Nobody had written the obituary. That was the thing Sam noticed: the companies that died this way did not get postmortems. They just stopped.
+
+Petra, after the meeting, asked Elena a precise question: "If you could have received this knowledge two years ago, at zero cost, would you have believed it enough to act on it?"
 
 "I would have told myself that the roadmap is where good decisions go to die. The roadmap is the graveyard of the infrastructure you know you need and are pretending you can defer. And I would have told myself that this is not a lesson you can learn from someone else's warning. It is a lesson you pay for."
 

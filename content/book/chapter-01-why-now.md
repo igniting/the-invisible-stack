@@ -11,6 +11,10 @@ tags: ["orchestration", "history", "foundations"]
 
 ---
 
+*Naomi Wallace ordered a winter coat in December from an online retailer. It arrived in the wrong size. She initiated a return through the automated support channel. The agent — checking her account history and the order metadata — classified the item as "final sale" and declined the return. The classification was wrong: the coat had been purchased with a standard discount, not a final-sale promotion. Naomi called the customer service number. The call routed to the same agent. She sent three emails. Each received an automated response citing the same classification. The refund was $187. She never received it.*
+
+---
+
 Sam Kovic first saw it work on a Tuesday night in October 2022, in a borrowed conference room above a ramen shop on Valencia Street.
 
 The meetup had no name. There were maybe fifteen people, mostly engineers between jobs or working on side projects, gathered around a single laptop connected to a projector. The presenter — a guy who said he'd been experimenting with GPT-3's API since the summer — showed something Sam had never seen before. He had written a script that took a question, asked the model to generate a Google search query, ran the search, fed the results back into the model, and produced an answer grounded in real, current information. The model was not hallucinating. It was *researching*. The whole thing was maybe forty lines of Python.

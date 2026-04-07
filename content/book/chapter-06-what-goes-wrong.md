@@ -59,7 +59,7 @@ Elena knew what that meant before Nadia finished describing it.
 
 "I'm going to investigate immediately," Elena said. "I will have a root cause analysis for you by end of day. I will be completely transparent about what happened. I'm — I'm very sorry, Nadia."
 
-"I appreciate that, Elena. But you should understand: the pilot is suspended indefinitely. Whether we resume depends entirely on what your investigation finds and whether I can defend the answer to my board and to our regulators. If this is what it looks like, you have a material breach of our data processing agreement. I need you to understand the seriousness of that."
+"I appreciate that, Elena. The pilot is suspended indefinitely. Resumption is conditional on your investigation findings and on whether the remediation is defensible — to my board, to our regulators, and under our data processing agreement. If this is what it appears to be, it constitutes a material breach. I need that to be understood, not apologized for."
 
 "I understand."
 
@@ -181,23 +181,23 @@ Nadia read the RCA twice. Then she forwarded it to Marcus Chen, with a short not
 
 Marcus read the RCA the next morning. Then he called Sam.
 
-"Sam. Your friend Elena's company. I'm about to write a very unflattering security assessment of her platform for Nadia. I wanted to give you a heads-up."
-
-"I appreciate that."
-
-"The root cause analysis is honest. That helps her. But the architecture underneath is worse than the incident suggests. A debug tool got shipped to production and nobody noticed for three weeks. That's a symptom, not a root cause. The root cause is that her company doesn't have the processes or the architecture to prevent this class of failure. They don't have a tool registry with production allowlists. They don't have per-tenant isolation at the retrieval layer. They don't have an audit of what tools are exposed in which environments. The agent is the symptom. The harness is the problem."
+"Sam. Elena's company."
 
 "I know."
 
-"I'm going to say that to Nadia. I'm going to recommend against resuming the pilot."
+"Her RCA is honest. Honestly, it's the most honest RCA I've read this year. That's not as reassuring as it sounds." A pause. "The architecture underneath is worse than the incident suggests. A debug tool in production for three weeks, nobody noticed. That's a symptom. Root cause is she doesn't have a tool registry, no per-tenant isolation at the retrieval layer, no audit of what's exposed in which environments. The agent did what agents do. The harness didn't stop it."
+
+"I know."
+
+"I'm going to say that to Nadia. Recommend against resuming."
 
 "I understand."
 
-"Sam, one other thing. I think you should offer to help her rebuild. Her team is going to need someone who's done this before. You are that person."
+"One other thing. You should offer to help her rebuild."
 
 "Why are you telling me this?"
 
-"Because the alternative is that her company dies, and the ecosystem loses a founder who has now learned — very expensively — the exact lesson the rest of us are trying to teach. That's a waste. Help her rebuild. She'll do it right the second time."
+"Because I've written a lot of these assessments. Most of them end with the company being too far gone to save. It's a depressing pattern. Also you built the architecture she should have built, which makes you — in a very indirect sense — the most useful person she could call."
 
 ---
 

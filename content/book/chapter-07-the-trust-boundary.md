@@ -11,6 +11,10 @@ tags: ["trust", "identity", "policy", "governance"]
 
 ---
 
+*In October 2025, a retired teacher named Harold Park tried to pay his quarterly estimated taxes online. His bank's fraud-detection system — a new AI-assisted layer deployed the previous quarter — flagged the transaction as anomalous: he had never used the bank's online interface to make a tax payment before. He had always mailed a check. His account was temporarily restricted. Lifting the restriction required verification through the bank's digital identity portal, which required a smartphone. Harold did not own a smartphone. The branch told him the restriction could only be lifted through the portal. He spent eleven days resolving it.*
+
+---
+
 Nadia Okafor stopped trying to persuade her security director twenty minutes into the meeting. She had come in with a forty-slide deck about agent governance. She closed the laptop after slide eleven.
 
 "Let me ask you a different question," she said. "If I told you that next week, a system in this building was going to send emails to our customers, query our core banking records, and take actions against external APIs — all without a human in the loop on every action — what would you need from me before you'd let that system run?"

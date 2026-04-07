@@ -11,6 +11,10 @@ tags: ["sandboxing", "security", "execution", "isolation"]
 
 ---
 
+*Maya Santos had worked customer support at a software company for four years. She handled escalated tickets — the ones the first-level team couldn't resolve — and she was good at it. In February 2026, she came in on a Monday and found her system access had been deprovisioned. IT told her it was part of a "support automation project." Her manager, when she finally reached him, said the decision had been made at a level above him. She had not been told in advance. The project had been running for six weeks. Her last day, retroactively, was the Friday before.*
+
+---
+
 Two weeks into his migration, Sam Kovic was standing at a whiteboard again, and Marcus Chen was telling him he was being too optimistic.
 
 It was September 2025. Sam's team had started the move from LangGraph to the Claude Agent SDK on AgentCore. The orchestration work was going well. The agent logic was porting cleanly. The hard part was the architecture around the agent. Specifically, the isolation architecture. The question of what the agent was physically allowed to touch.

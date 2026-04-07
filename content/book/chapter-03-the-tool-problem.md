@@ -81,7 +81,7 @@ Sam presented the results to his CEO, Leo.
 
 "Because building a protocol is different from building an integration. A protocol only works if other people adopt it. We couldn't have created industry-wide adoption. We had to wait for someone else to do it."
 
-Leo nodded. "How much of our infrastructure is going to look like this over the next two years? Problems we couldn't solve alone, now solved by someone else, and we just have to integrate?"
+Leo nodded. "How much of our infrastructure ends up like this? Someone else solves the protocol problem, we just adopt it?"
 
 "Most of it, I think."
 

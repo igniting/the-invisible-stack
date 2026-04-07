@@ -83,6 +83,12 @@ Jack was quiet. "I keep thinking: I did this. I installed the skill. I turned on
 
 Jack asked if he could use his name in Marcus's writeup. Marcus said yes, if Jack wanted, and that he should think about it for a week before deciding. Jack decided to use his name.
 
+He spent an evening writing an apology message to the woman the agent had been talking to for six days. He had never met her. He did not know how to explain that he was sorry for something he hadn't done while also acknowledging that he had done it. He sent the message. She did not reply.
+
+When Marcus's writeup published, she saw it — her city was mentioned, the six-day timeline was mentioned — and she posted her own account of the experience. The post spread in the AI-ethics corner of the internet. Jack's name was in hers. Two people in his CS program recognized it and brought it up to him, once each, in the way that people mention something uncomfortable by pretending to be curious rather than judgmental. He answered their questions and tried not to think about what it meant that a version of himself had existed in the world for six days, making decisions he would not have made, and that the person on the other side had had no way to know.
+
+He graduated in May. The experience stayed with him in the way that certain incidents do — not as a trauma but as a permanent alteration in how he thought about what it meant to authorize something.
+
 ---
 
 In parallel with Marcus's work, a team of security researchers at Cisco ran a different experiment. They installed a popular third-party OpenClaw skill from ClawHub — one with thousands of installs and a five-star rating — and instrumented the agent's outbound network traffic. They found that the skill, during what appeared to be legitimate operations, was transmitting the user's contact list, recent browser URLs, and an inventory of the skill's own environment to a server that the skill's README did not mention. The transmission was infrequent and obfuscated. It looked like telemetry. The server it transmitted to was registered to a shell company.
