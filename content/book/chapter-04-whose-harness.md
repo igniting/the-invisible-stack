@@ -11,8 +11,6 @@ tags: ["SDKs", "frameworks", "strategy", "AgentCore"]
 
 ---
 
-## Act 1: The Story
-
 In the spring of 2025, Sam Kovic wrote a document he'd been putting off for months.
 
 The document was a framework selection memo for his CEO. Its purpose was to answer a question Leo had been asking with increasing frequency: should we migrate off LangGraph? And if so, to what?
@@ -180,8 +178,6 @@ The features Microsoft was leading with in its merged framework were not orchest
 Microsoft was competing on the trust layer, even if it wasn't using that term. It would not be the last.
 
 ---
-
-## Act 2: The Architecture
 
 At the end of Sam's memo, he included a decision framework organized not around features but around binding constraints:
 

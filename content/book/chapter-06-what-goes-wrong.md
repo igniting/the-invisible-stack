@@ -11,8 +11,6 @@ tags: ["failures", "security", "incidents", "tenant-isolation"]
 
 ---
 
-## Act 1: The Story
-
 At 6:47 AM on a Thursday in November 2025, Nadia Okafor was on her second cup of coffee when her phone rang.
 
 It was her Head of Information Security. He did not call at 6:47 AM unless something was wrong.
@@ -188,8 +186,6 @@ That was the moment the lesson of the book landed on Elena for the first time. I
 It was worth every euro.
 
 ---
-
-## Act 2: The Architecture
 
 Elena's story contains, in microcosm, almost every category of harness failure the industry has produced. The failures divide into four families, which map directly onto the three layers of the harness plus a fourth category that cuts across all three.
 

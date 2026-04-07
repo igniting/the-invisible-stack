@@ -11,8 +11,6 @@ tags: ["trust", "identity", "policy", "governance"]
 
 ---
 
-## Act 1: The Story
-
 Nadia Okafor stopped trying to persuade her security director twenty minutes into the meeting. She had come in with a forty-slide deck about agent governance. She closed the laptop after slide eleven.
 
 "Let me ask you a different question," she said. "If I told you that next week, a system in this building was going to send emails to our customers, query our core banking records, and take actions against external APIs — all without a human in the loop on every action — what would you need from me before you'd let that system run?"
@@ -108,8 +106,6 @@ The framework was not a standard. It was a working document, used inside one com
 Elena read the mandatory core the week Sam sent it to her. She printed it and marked it up. Of the seven items, her rebuild already satisfied three. She added the other four to her engineering plan.
 
 ---
-
-## Act 2: The Architecture
 
 ### The Three Identities, and What Binding Actually Means
 

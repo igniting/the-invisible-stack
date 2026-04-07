@@ -11,8 +11,6 @@ tags: ["orchestration", "history", "foundations"]
 
 ---
 
-## Act 1: The Story
-
 Sam Kovic first saw it work on a Tuesday night in October 2022, in a borrowed conference room above a ramen shop on Valencia Street.
 
 The meetup had no name. There were maybe fifteen people, mostly engineers between jobs or working on side projects, gathered around a single laptop connected to a projector. The presenter — a guy who said he'd been experimenting with GPT-3's API since the summer — showed something Sam had never seen before. He had written a script that took a question, asked the model to generate a Google search query, ran the search, fed the results back into the model, and produced an answer grounded in real, current information. The model was not hallucinating. It was *researching*. The whole thing was maybe forty lines of Python.
@@ -202,8 +200,6 @@ She didn't know Sam or Elena or David or Marcus at this point in the story. She 
 For now, she put the reports in a stack, wrote "Revisit Q3 2025" on a sticky note, and went back to the problems she could solve.
 
 ---
-
-## Act 2: The Architecture
 
 The foundational building block of every agent system — from the simplest chatbot wrapper to the most sophisticated multi-agent workflow — is what Anthropic, in a widely cited December 2024 essay, called the "augmented LLM." This is a language model enhanced with three capabilities: **retrieval** (the ability to access external information), **tools** (the ability to take actions in the world), and **memory** (the ability to persist information across interactions). These three augmentations transform a passive text generator into something that can, in principle, act on a user's behalf.
 

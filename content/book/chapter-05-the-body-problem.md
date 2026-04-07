@@ -11,8 +11,6 @@ tags: ["sandboxing", "security", "execution", "isolation"]
 
 ---
 
-## Act 1: The Story
-
 Two weeks into his migration, Sam Kovic was standing at a whiteboard again, and Marcus Chen was telling him he was being too optimistic.
 
 It was September 2025. Sam's team had started the move from LangGraph to the Claude Agent SDK on AgentCore. The orchestration work was going well. The agent logic was porting cleanly. The hard part was the architecture around the agent. Specifically, the isolation architecture. The question of what the agent was physically allowed to touch.
@@ -138,8 +136,6 @@ Sam stared at the comment for a long time. Then he added a line to his architect
 It was not a sentence he would have written a year earlier.
 
 ---
-
-## Act 2: The Architecture
 
 ### The Isolation Hierarchy
 

@@ -11,8 +11,6 @@ tags: ["skills", "learning", "Hermes", "SKILL.md"]
 
 ---
 
-## Act 1: The Story
-
 Elena Voss discovered skills by accident, in the third week of her rebuild, while she was trying to solve a problem she did not realize had a name.
 
 It was late February 2026. Her company had committed to the Claude Agent SDK as part of the rebuild — Sam had pushed her toward it, Nadia's framework had pushed her toward it, and by the time Elena actually looked at the documentation, the decision had been made. She was porting the agent's instructions from her old CrewAI configuration when she hit the problem that had been hurting her for a year without her having articulated it.
@@ -122,8 +120,6 @@ Elena noted this down. Then she changed the subject. They talked about the fact 
 "It's the only path. The alternative was to not have a company."
 
 ---
-
-## Act 2: The Architecture
 
 ### The SKILL.md Anatomy
 
