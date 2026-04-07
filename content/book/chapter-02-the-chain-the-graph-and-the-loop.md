@@ -11,8 +11,6 @@ tags: ["orchestration", "LangGraph", "frameworks"]
 
 ---
 
-## Act 1: The Story
-
 Six months into building his company's agent platform, Sam Kovic hit the wall.
 
 It was a Thursday afternoon in August 2023. He was in a conference room with two of his engineers, staring at a whiteboard covered in arrows, and they were trying to debug an agent that processed customer support tickets. The agent was supposed to read the ticket, search the knowledge base for relevant documentation, draft a response, check the draft against company policy, and send it. Five steps. A chain.
@@ -173,8 +171,6 @@ Sam noticed the convergence. The team that built the chain had replaced it with 
 
 ---
 
-## Act 2: The Architecture
-
 The three metaphors correspond to distinct execution models, and understanding them at a technical level clarifies both their strengths and their failure modes.
 
 ### The Chain Execution Model
@@ -231,8 +227,8 @@ A **loop** is unbounded by default. Without a maximum iteration count or token b
 
 The most significant cost factor is **context growth**. Each iteration sends the accumulated state as input. A ten-turn interaction where each turn adds 500 tokens sends 500 input tokens on turn one, 1,000 on turn two, 1,500 on turn three. Total input cost: not 10x but approximately 55x the first turn. This quadratic growth is the hidden tax of long-running agents.
 
-**Checkpointing** provides economic benefit beyond durability. Without it, a failed ten-step loop wastes the cost of all ten steps. With it, recovery costs only the steps after the last checkpoint. At Elena's 15% failure rate and $14,000 monthly model spend, the waste was roughly $5,000 per month — more than enough to justify the engineering investment in checkpointing infrastructure.
+**Checkpointing** provides economic benefit beyond durability. Without it, a failed ten-step loop wastes the cost of all ten steps. With it, recovery costs only the steps after the last checkpoint. At Elena's 15% failure rate and five-figure monthly model spend, the waste ran to thousands of dollars per month — more than enough to justify the engineering investment in checkpointing infrastructure.
 
 The broader principle: the infrastructure that feels like overhead — checkpointing, observability, durable execution — is not cost added on top of the agent. It is cost subtracted from the agent's failure modes. In a field where the most expensive thing is not running an agent but re-running a failed one, the harness is not overhead. It is savings.
 
-Sam understood this. Elena would learn it the hard way. The lesson, when it came, would cost more than $5,000 a month.
+Sam understood this. Elena would learn it the hard way. The lesson, when it came, would cost more than a few thousand dollars a month.

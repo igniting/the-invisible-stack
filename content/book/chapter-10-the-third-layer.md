@@ -11,8 +11,6 @@ tags: ["trust", "conclusions", "maturity model"]
 
 ---
 
-## Act 1: The Story
-
 On a Tuesday morning in early April 2026, Sam Kovic sat in his office with the door closed and read an internal Slack message that said his team's migration to the Claude Agent SDK on AgentCore had, after six months and two slipped deadlines, gone live in production for its first enterprise customer.
 
 He did not feel triumphant. He felt the particular kind of flatness that follows a long engineering project reaching its endpoint — the flatness of a problem that has moved from active to maintained. He closed the laptop, walked to the window, and stood there for three minutes. Then he went back to his desk and wrote a message to his team that said *thank you* and *now we harden it* and *please take Friday off.*
@@ -127,11 +125,9 @@ She wrote in her notebook that evening: *The trust layer is not built by any sin
 
 ---
 
-## Act 2: The Architecture
-
 The book's central claim has been that what everyone calls "the agent framework" is actually three layers pretending to be one. The **orchestration layer** shapes how agents reason. The **execution layer** constrains what agents can physically touch. The **trust layer** governs whether agents' actions can be identified, authorized, audited, and defended.
 
-The book has argued that these three layers are, in early 2026, at radically different stages of maturity. The orchestration layer is mature. The execution layer is adolescent. The trust layer is nascent. And this asymmetry has consequences: Elena's November incident, the Asana cross-tenant leak, the 42,665 exposed OpenClaw instances, Jack Luo's dating profile, the Cisco skill-telemetry findings.
+The book has argued that these three layers are, in early 2026, at radically different stages of maturity. The orchestration layer is mature. The execution layer is adolescent. The trust layer is nascent. And this asymmetry has consequences: Elena's November incident, the Asana cross-tenant leak, the more than forty thousand exposed OpenClaw instances, Jack Luo's dating profile, the Cisco skill-telemetry findings.
 
 ### Three Diagnostic Questions
 

@@ -11,8 +11,6 @@ tags: ["MCP", "tools", "security", "protocols"]
 
 ---
 
-## Act 1: The Story
-
 David Almeida was copying data between applications for the fourth time that morning, and he was starting to take it personally.
 
 It was October 2024. David was a senior engineer at one of the major AI labs, working on integrations between the company's models and external tools — GitHub, Slack, Google Drive, Jira, internal databases. Each integration was a bespoke piece of software: its own authentication logic, its own data format, its own error handling, its own maintenance burden. When the company wanted to add a new tool, an engineer had to write a new connector. When a tool's API changed — which happened constantly — the connector had to be updated. The number of integrations was growing linearly. The maintenance cost was growing faster than linearly, because each connector could break independently, and they often did.
@@ -129,7 +127,7 @@ The first major real-world manifestation of MCP's trust gap came in May 2025, wh
 
 Asana's MCP server provided integrations with ChatGPT, Claude, and Microsoft Copilot. Enterprise users could connect their preferred AI assistant to Asana and have the assistant query projects, retrieve task information, and interact with Asana's data on their behalf.
 
-Then, in July 2025, Asana disclosed a security incident. Due to a logic flaw in how the MCP server handled tenant isolation and cached responses, requests from one organization's AI agent could retrieve cached results containing another organization's data. The cross-tenant contamination persisted silently for thirty-four days, impacting roughly 1,000 organizations, including major enterprises.
+Then, in July 2025, Asana disclosed a security incident. Due to a logic flaw in how the MCP server handled tenant isolation and cached responses, requests from one organization's AI agent could retrieve cached results containing another organization's data. The cross-tenant contamination persisted silently for more than a month, impacting hundreds of organizations, including major enterprises.
 
 Sam read about the incident in a security newsletter. He immediately called Marcus.
 
@@ -143,7 +141,7 @@ Sam read about the incident in a security newsletter. He immediately called Marc
 
 Sam spent the next two weeks rearchitecting his tenant isolation. He added cryptographic tenant binding at his application layer, before MCP calls were made. He added audit logging for every MCP request and response. He added tenant-scoped rate limits to detect anomalous access patterns. The rearchitecture delayed a product launch by three weeks and added significant engineering complexity.
 
-"Three weeks to prevent a thirty-four-day cross-tenant leak," Leo said when Sam told him. "Do it. Do it right."
+"Three weeks to prevent a month-long cross-tenant leak," Leo said when Sam told him. "Do it. Do it right."
 
 Elena did not rearchitect her tenant isolation.
 
@@ -184,8 +182,6 @@ The N×M integration problem had become N+M. Good. But the trust surface had gon
 This was not a reason to reject MCP. It was a reason to build the trust infrastructure that MCP, by design, did not provide.
 
 ---
-
-## Act 2: The Architecture
 
 ### The Protocol Design
 

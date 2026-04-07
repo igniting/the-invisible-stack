@@ -41,6 +41,14 @@ The book's narrative follows five people who are composites of real practitioner
 
 ---
 
+## A Note on Fiction
+
+The characters, companies, and specific numbers in this book are invented. The technologies, protocols, and failure modes are real.
+
+Sam's startup, Elena's enterprise, Marcus's security findings, and the organizations they work within are composites and constructions — useful fictions for talking about real infrastructure problems. Where specific figures appear (incident timelines, exposure counts, cost estimates), treat them as illustrative of a class of problem, not as documented fact.
+
+---
+
 ## A Note on Timing
 
 The events in this book span October 2022 to April 2026. Several technologies described here were new or experimental at the time they appear in the narrative; some have since become standard. The appendices (especially the timeline and architecture diagrams) reflect the state of the industry as of early 2026.

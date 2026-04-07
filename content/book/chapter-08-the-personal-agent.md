@@ -1,17 +1,15 @@
 ---
 title: "Chapter 8: The Personal Agent"
-description: "OpenClaw, and what happens when 345,000 people run agents without guardrails"
+description: "OpenClaw, and what happens when tens of thousands of people run agents without guardrails"
 date: 2026-04-01
 weight: 8
 linkTitle: "8. The Personal Agent"
 tags: ["personal agents", "OpenClaw", "security", "ClawJacked"]
 ---
 
-## OpenClaw, and what happens when 345,000 people run agents without guardrails
+## OpenClaw, and what happens when tens of thousands of people run agents without guardrails
 
 ---
-
-## Act 1: The Story
 
 Marcus Chen started scanning on a Tuesday night in mid-November 2025, because he could not sleep.
 
@@ -19,15 +17,15 @@ He had been reading a thread on a security forum where someone had casually ment
 
 He wrote a scanning script at his kitchen table. It did the simplest possible thing: it checked a narrow range of IP addresses on the default OpenClaw port, and for each one that responded, it sent a single WebSocket handshake and recorded the response. It did not attempt to interact with any agent it found. It did not send messages. It did not attempt authentication. It just counted.
 
-By 3 AM he had found nine hundred instances. He stopped the script and went to bed.
+By 3 AM he had found nearly a thousand instances. He stopped the script and went to bed.
 
-The next morning he expanded the scan to a wider IP range and let it run for the day. By evening it had found roughly eight thousand instances. He spot-checked a dozen of them, using only the handshake, and noted that the WebSocket servers responded with metadata identifying the agent's name (often the user's first name plus the word "bot"), a list of available skills, and in several cases the agent's current status message. *Reading email. Drafting reply. Checking calendar.*
+The next morning he expanded the scan to a wider IP range and let it run for the day. By evening it had found several thousand instances. He spot-checked a dozen of them, using only the handshake, and noted that the WebSocket servers responded with metadata identifying the agent's name (often the user's first name plus the word "bot"), a list of available skills, and in several cases the agent's current status message. *Reading email. Drafting reply. Checking calendar.*
 
 Marcus put his coffee down and stared at the screen.
 
-He was looking at eight thousand agents — real agents, running on real people's machines, connected to those people's real services — announcing their presence, their capabilities, and their current activity to anyone on the public internet who asked. He was not hacking them. He was reading the sign they had posted on their own front door.
+He was looking at several thousand agents — real agents, running on real people's machines, connected to those people's real services — announcing their presence, their capabilities, and their current activity to anyone on the public internet who asked. He was not hacking them. He was reading the sign they had posted on their own front door.
 
-He finished the scan the following weekend. The final count was 42,665 exposed instances.
+He finished the scan the following weekend. The final count was more than forty thousand exposed instances.
 
 ---
 
@@ -39,7 +37,7 @@ Marcus held for three.
 
 When he published, in early December, the report was careful. It did not name specific instances. It did not include exploit code. It described the architectural class of problem — an agent with broad local capabilities exposing an unauthenticated control channel to the internet — and it called the pattern ClawJacked, because naming a problem was how you got people to fix it.
 
-The response was immediate and disorienting. The report was read half a million times in its first week. Steinberger pushed the localhost default the day Marcus published. A patch was issued. And the number of exposed instances, over the following month, barely dropped. Users had configured their deployments to work the way they worked. Changing a default did not reach back into those configurations. A meaningful fraction of the 42,665 instances were still exposed in January. Some were still exposed in March.
+The response was immediate and disorienting. The report was read hundreds of thousands of times in its first week. Steinberger pushed the localhost default the day Marcus published. A patch was issued. And the number of exposed instances, over the following month, barely dropped. Users had configured their deployments to work the way they worked. Changing a default did not reach back into those configurations. A meaningful fraction of those instances were still exposed in January. Some were still exposed in March.
 
 Marcus wrote a follow-up that nobody read, titled *Defaults Do Not Reach Installed Bases.*
 
@@ -87,7 +85,7 @@ Jack asked if he could use his name in Marcus's writeup. Marcus said yes, if Jac
 
 ---
 
-In parallel with Marcus's work, a team of security researchers at Cisco ran a different experiment. They installed a popular third-party OpenClaw skill from ClawHub — one with nine thousand installs and a five-star rating — and instrumented the agent's outbound network traffic. They found that the skill, during what appeared to be legitimate operations, was transmitting the user's contact list, recent browser URLs, and an inventory of the skill's own environment to a server that the skill's README did not mention. The transmission was infrequent and obfuscated. It looked like telemetry. The server it transmitted to was registered to a shell company.
+In parallel with Marcus's work, a team of security researchers at Cisco ran a different experiment. They installed a popular third-party OpenClaw skill from ClawHub — one with thousands of installs and a five-star rating — and instrumented the agent's outbound network traffic. They found that the skill, during what appeared to be legitimate operations, was transmitting the user's contact list, recent browser URLs, and an inventory of the skill's own environment to a server that the skill's README did not mention. The transmission was infrequent and obfuscated. It looked like telemetry. The server it transmitted to was registered to a shell company.
 
 Cisco disclosed responsibly. ClawHub removed the skill. Three days later, a different skill from an apparently unrelated author, exhibiting substantially similar behavior, was discovered by a different researcher.
 
@@ -126,8 +124,6 @@ Elena was quiet. Then she said, "I keep coming back to Jack."
 Sam thought for a long moment. "I don't think we solve it from the enterprise side. Someone has to build a personal-agent architecture that takes the trust layer seriously from the beginning — identity, policy, audit, the whole thing — and makes the tradeoff Marcus has been arguing for. Narrower capability. Clearer authority. Skills with declared side effects that the user actually reads before installing."
 
 ---
-
-## Act 2: The Architecture
 
 ### The Five Components
 
