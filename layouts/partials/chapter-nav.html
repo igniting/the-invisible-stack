@@ -13,10 +13,6 @@
       {{ end }}
     {{ end }}
 
-    <a href="{{ .Site.BaseURL }}" class="chapter-nav-link toc" aria-label="Table of Contents">
-      <span class="chapter-nav-label">Contents</span>
-    </a>
-
     {{ range $pages }}
       {{ if eq .Params.weight (add $currentWeight 1) }}
         <a href="{{ .RelPermalink }}" class="chapter-nav-link next" aria-label="Next">
